@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Minimalist Gallery</title>
+    <!-- Elegant Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Unique Split-Screen Preloader -->
+    <div class="preloader">
+        <div class="loader-half loader-top"></div>
+        <div class="loader-half loader-bottom"></div>
+        <div class="loader-text">Digital Works</div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>DIGITAL WORKS</h1>
+            </div>
+            <nav class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="website">Websites</button>
+                <button class="filter-btn" data-filter="video">Video</button>
+                <button class="filter-btn" data-filter="reels">Reels</button>
+                <button class="filter-btn" data-filter="poster">Poster</button>
+                <button class="filter-btn" data-filter="photo">Photo</button>
+            </nav>
+        </header>
+
+        <main>
+            <div class="portfolio-grid">
+
+                <!-- Video 1 (Wide Feature) -->
+                <div class="portfolio-item gallery-wide" data-category="video">
+                    <div class="item-inner">
+                        <video class="item-media" src="video1.mp4" autoplay loop controls playsinline></video>
+                        <div class="item-info">
+                            <h3>Cinematic Sequence</h3>
+                            <span>01 / Film</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 1 (Large Feature) -->
+                <div class="portfolio-item gallery-large" data-category="photo">
+                    <div class="item-inner">
+                        <img class="item-media" src="photo1.jpeg" alt="Editorial Photo 1">
+                        <div class="item-info">
+                            <h3>Trending Edit</h3>
+                            <span>02 / Photo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reels 1 -->
+                <div class="portfolio-item" data-category="reels">
+                    <div class="item-inner">
+                        <video class="item-media" src="reels1.mp4" autoplay loop controls playsinline></video>
+                        <div class="item-info">
+                            <h3>Insta reels</h3>
+                            <span>03 / Shorts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poster 1 -->
+                <div class="portfolio-item" data-category="poster">
+                    <div class="item-inner">
+                        <img class="item-media" src="poster1.jpeg" alt="Poster Typography">
+                        <div class="item-info">
+                            <h3>Memorable Frame Design</h3>
+                            <span>04 / Poster</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="portfolio-item" data-category="photo">
+                    <div class="item-inner">
+                        <img class="item-media" src="photo2.jpeg" alt="Editorial Photo 2">
+                        <div class="item-info">
+                            <h3>Colour grade</h3>
+                            <span>05 / Photo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reels 2 -->
+                <div class="portfolio-item" data-category="reels">
+                    <div class="item-inner">
+                        <video class="item-media" src="reels2.mp4" autoplay loop controls playsinline></video>
+                        <div class="item-info">
+                            <h3>Insta reels</h3>
+                            <span>06 / Shorts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poster 2 -->
+                <div class="portfolio-item" data-category="poster">
+                    <div class="item-inner">
+                        <img class="item-media" src="poster2.png" alt="Visual Poster Design">
+                        <div class="item-info">
+                            <h3>Advertisement poster</h3>
+                            <span>07 / Poster</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deepam Tailors (Website 1) -->
+                <div class="portfolio-item gallery-large" data-category="website">
+                    <a href="https://deepamtailors.netlify.app/" target="_blank"
+                        style="text-decoration: none; display: block; color: inherit;">
+                        <div class="item-inner">
+                            <div class="item-media" style="position: relative; overflow: hidden; background: #fff;">
+                                <iframe src="https://deepamtailors.netlify.app/"
+                                    style="width: 400%; height: 400%; transform: scale(0.25); transform-origin: top left; border: none; pointer-events: none; position: absolute; top: 0; left: 0;"></iframe>
+                            </div>
+                            <div class="item-info">
+                                <h3>Deepam Tailors ↗</h3>
+                                <span>08 / Website</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Comfort Healthcare (Website 2) -->
+                <div class="portfolio-item gallery-wide" data-category="website">
+                    <a href="https://comforthealthcare.netlify.app/" target="_blank"
+                        style="text-decoration: none; display: block; color: inherit;">
+                        <div class="item-inner">
+                            <div class="item-media" style="position: relative; overflow: hidden; background: #fff;">
+                                <iframe src="https://comforthealthcare.netlify.app/"
+                                    style="width: 400%; height: 400%; transform: scale(0.25); transform-origin: top left; border: none; pointer-events: none; position: absolute; top: 0; left: 0;"></iframe>
+                            </div>
+                            <div class="item-info">
+                                <h3>Comfort Healthcare ↗</h3>
+                                <span>09 / Website</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <h2>Ready to collaborate?</h2>
+                <a href="https://www.instagram.com/trendcutzz_?igsh=cjdxejV5MmNweTAw" target="_blank"
+                    class="contact-btn">Message on Instagram</a>
+                <p class="copyright">&copy; 2026 Archive. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
