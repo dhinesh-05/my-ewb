@@ -47,34 +47,36 @@
             padding: 4rem 2rem;
         }
 
-        /* Header & Typography - Full Website Cover */
+        /* Header & Typography - Elegant Minimal Hero */
         header {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             text-align: center;
-            gap: 3.5rem;
-            min-height: 85vh;
-            margin-bottom: 4rem;
-            margin-top: -2rem; /* Balance container top padding */
+            gap: 2.5rem;
+            margin-bottom: 5rem;
+            margin-top: 2rem;
+            padding: 0 1rem;
         }
 
         .logo h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: clamp(3.5rem, 12vw, 9rem); /* Massive cover typography */
-            font-weight: 800;
-            letter-spacing: -3px;
-            line-height: 1;
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(1.75rem, 6vw, 3rem);
+            /* 28px mobile to 48px desktop */
+            font-weight: 600;
+            /* Semi-bold for clean Apple UI look */
+            letter-spacing: 2.5px;
+            line-height: 1.3;
+            max-width: 90vw;
+            /* Clean text wrapping on mobile */
 
-            /* Rich Gradient: Deep Purple to Blue */
-            background: linear-gradient(135deg, #6C5CE7 0%, #0984E3 100%);
+            /* Light blue to soft cyan gradient */
+            background: linear-gradient(135deg, #60a5fa 0%, #2dd4bf 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
 
-            /* Subtle shadow for background separation */
-            filter: drop-shadow(0px 8px 16px rgba(9, 132, 227, 0.2));
-            margin-bottom: 1rem;
+            /* Add optional subtle glow to gradient */
+            filter: drop-shadow(0px 4px 12px rgba(45, 212, 191, 0.15));
         }
 
         .subtitle {
@@ -188,13 +190,15 @@
 
         .item-media {
             width: 100%;
-            display: block; /* Prevent inline descender space */
+            display: block;
+            /* Prevent inline descender space */
             object-fit: cover;
             background-color: #f9f9f9;
             /* Skeleton load color */
             filter: grayscale(10%);
             transition: filter 0.6s ease;
-            box-sizing: border-box; /* Consistently contain border */
+            box-sizing: border-box;
+            /* Consistently contain border */
 
             /* Elegant Outline Frame */
             border: 12px solid #ffffff;
@@ -347,7 +351,8 @@
 
             .logo h1 {
                 /* Handled by CSS clamp automatically */
-                letter-spacing: -1px;
+                letter-spacing: 1px;
+                /* Slightly tighter but still elegant on mobile */
             }
 
             .filters {
@@ -420,15 +425,18 @@
         /* Inline Scrolling Banner (Below Header) */
         .inline-scrolling-banner {
             width: 100vw;
-            margin-left: calc(-50vw + 50%); /* Break out of container to full screen width */
+            margin-left: calc(-50vw + 50%);
+            /* Break out of container to full screen width */
             height: 54px;
-            background-color: #f8f9fa; /* Very light grey */
+            background-color: #f8f9fa;
+            /* Very light grey */
             display: flex;
             align-items: center;
             overflow: hidden;
-            border-top: 1px solid rgba(0, 0, 0, 0.05); 
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
             border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02); /* Subtle depth */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+            /* Subtle depth */
         }
 
         .banner-track {
@@ -445,20 +453,26 @@
             font-family: 'Poppins', sans-serif;
             font-size: 1.05rem;
             font-weight: 600;
-            white-space: nowrap; /* Enforce single line */
+            white-space: nowrap;
+            /* Enforce single line */
             padding: 0 2rem;
-            
+
             /* Gradient matching DIGITAL WORKS */
             background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 2px 8px rgba(59, 130, 246, 0.15); 
+            text-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
         }
 
         /* Continuous Left-to-Right loop */
         @keyframes marqueeBanner {
-            0% { transform: translateX(-50%); }
-            100% { transform: translateX(0%); }
+            0% {
+                transform: translateX(-50%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
         }
     </style>
 </head>
@@ -468,7 +482,7 @@
     <div class="preloader">
         <div class="loader-text">Digital Works</div>
     </div>
-    
+
 
 
     <div class="container">
@@ -476,14 +490,18 @@
             <div class="logo">
                 <h1>DIGITAL WORKS</h1>
             </div>
-            
+
             <!-- Inline Scrolling Banner -->
             <div class="inline-scrolling-banner">
                 <div class="banner-track">
-                    <span class="banner-text">🚀 DM for Paid Work • Website Development • Video Editing • Design Services &nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span class="banner-text">🚀 DM for Paid Work • Website Development • Video Editing • Design Services &nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span class="banner-text">🚀 DM for Paid Work • Website Development • Video Editing • Design Services &nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span class="banner-text">🚀 DM for Paid Work • Website Development • Video Editing • Design Services &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="banner-text">🚀 DM for Paid Work • Website Development • Video Editing • Design
+                        Services &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="banner-text">🚀 DM for Paid Work • Website Development • Video Editing • Design
+                        Services &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="banner-text">🚀 DM for Paid Work • Website Development • Video Editing • Design
+                        Services &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="banner-text">🚀 DM for Paid Work • Website Development • Video Editing • Design
+                        Services &nbsp;&nbsp;&nbsp;&nbsp;</span>
                 </div>
             </div>
 
@@ -504,7 +522,9 @@
                 <div class="portfolio-item" data-category="video">
                     <div class="item-inner">
                         <div class="item-media" style="position: relative; overflow: hidden;">
-                            <iframe src="https://drive.google.com/file/d/1uQBiLYpGTIcQulMypHz3oZ_hngxYU1Al/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe src="https://drive.google.com/file/d/1uQBiLYpGTIcQulMypHz3oZ_hngxYU1Al/preview"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                         <div class="item-info">
                             <h3>Cinematic Sequence</h3>
@@ -528,7 +548,9 @@
                 <div class="portfolio-item" data-category="reels">
                     <div class="item-inner">
                         <div class="item-media" style="position: relative; overflow: hidden;">
-                            <iframe src="https://drive.google.com/file/d/1ibHDB9h0DeTQR7JkdZeYCdbTDMxzoL4B/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe src="https://drive.google.com/file/d/1ibHDB9h0DeTQR7JkdZeYCdbTDMxzoL4B/preview"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                         <div class="item-info">
                             <h3>Insta reels</h3>
@@ -563,7 +585,9 @@
                 <div class="portfolio-item" data-category="reels">
                     <div class="item-inner">
                         <div class="item-media" style="position: relative; overflow: hidden;">
-                            <iframe src="https://drive.google.com/file/d/1YwqxJi0W2CM6b3BX_jMunFwKhAYEL03T/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <iframe src="https://drive.google.com/file/d/1YwqxJi0W2CM6b3BX_jMunFwKhAYEL03T/preview"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                         <div class="item-info">
                             <h3>Insta reels</h3>
